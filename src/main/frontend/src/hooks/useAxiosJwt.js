@@ -33,7 +33,7 @@ function useAxiosJwt() {
 
     return () => {
       axiosJwt.interceptors.request.eject(requestInterceptor);
-      axiosJwt.interceptors.request.eject(responseInterceptor);
+      axiosJwt.interceptors.response.eject(responseInterceptor);
     }
   }, [auth]);
 

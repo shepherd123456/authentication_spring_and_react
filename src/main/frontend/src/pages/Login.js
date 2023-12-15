@@ -39,7 +39,7 @@ function Login() {
       const accessToken = res.data.accessToken;
       const refreshToken = res.data.refreshToken;
       const roles = res.data.roles;
-      setAuth(() => { user, pwd, accessToken, refreshToken, roles });
+      setAuth({ user, pwd, accessToken, refreshToken, roles });
       console.log(refreshToken);
       setUser('');
       setPwd('');
